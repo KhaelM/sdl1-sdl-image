@@ -38,9 +38,9 @@ int main(int argc, char const *argv[])
     int treeY = 50;
     SDL_Rect treePosition = {treeX, treeY};
     SDL_Surface *tree = IMG_Load("pack_images_sdz/sapin.png");
-    Uint32 blue = SDL_MapRGB(tree->format, 0, 0, 255);
+    Uint32 white = SDL_MapRGB(tree->format, 255, 255, 255);
     // Apply TOTAL transparency on blue
-    SDL_SetColorKey(tree, SDL_SRCCOLORKEY, blue);
+    SDL_SetColorKey(tree, SDL_SRCCOLORKEY, white);
     // Apply opacity on tree (value range: 0 - 255)
     SDL_SetAlpha(tree, SDL_SRCALPHA, 255);
 
