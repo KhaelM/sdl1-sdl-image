@@ -1,0 +1,1 @@
+How to use SDL-Image on SDL1
